@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 
 import { Card, CardHeader, CardBody, CardFooter, Divider, Image,Button,useDisclosure,Modal,ModalContent,ModalHeader,ModalFooter ,Input ,ModalBody } from "@nextui-org/react";
@@ -69,7 +70,7 @@ export default function Cards(props) {
                 />
                 <div className="flex flex-col">
                     <p className="text-md">{title}</p>
-                    <p className="text-small text-default-500">nextui.org</p>
+                    <p className="text-small text-default-500">Todo app.</p>
                 </div>
             </CardHeader>
             <Divider />

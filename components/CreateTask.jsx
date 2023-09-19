@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Input, Select, SelectItem } from "@nextui-org/react";
@@ -114,7 +115,7 @@ export default function CreateTask() {
           )}
         </ModalContent>
       </Modal>
-      <div className=" ml-4  flex items-center gap-4 overscroll-scroll   flex-wrap">
+      <div className=" ml-4  flex items-center gap-4 bg-black max-w-[100%]    flex-wrap">
       {
         tasks.map((task,index)=>{
           return <Card key={index} {...task} handleDelete={handleDelete} onOpen={onOpen} handleUpdate={handleUpdate} setTask={setTask} tasks={tasks} index={index} />
